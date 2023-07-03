@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="10" time="0.166" timestamp="2023-07-03T21:35:34.785189" hostname="COH-TQ24P7KY6R"><testcase classname="test_api" name="test_customer_info" time="0.031" /><testcase classname="test_api" name="test_negative_customer_info" time="0.001"><failure message="AssertionError: assert 'cust_name' in {}">api_client = &lt;requests.sessions.Session object at 0x103d609d0&gt;
+
+    def test_negative_customer_info(api_client):
+        policy_number = 0
+        url = f"{base_url}/policy/{policy_number}"
+        result = send_payload(url, api_client)
+        print(result)
+        # Validate the result
+        screen = result['Customer Info']
+&gt;       validate_customer(screen)
+
+test_api.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+result = {}
+
+    def validate_customer(result):
+&gt;   	assert 'cust_name' in result
+E    AssertionError: assert 'cust_name' in {}
+
+test_api.py:126: AssertionError</failure></testcase><testcase classname="test_api" name="test_date_screen" time="0.002" /><testcase classname="test_api" name="test_vehicle_screen" time="0.001" /><testcase classname="test_api" name="test_license_screen" time="0.001" /><testcase classname="test_api" name="test_driver_screen" time="0.002" /><testcase classname="test_api" name="test_coverage_screen" time="0.002" /><testcase classname="test_api" name="test_quote_screen" time="0.003" /><testcase classname="test_api" name="test_login_api" time="0.013" /><testcase classname="test_api" name="test_failed_login_api" time="0.002" /></testsuite></testsuites>
