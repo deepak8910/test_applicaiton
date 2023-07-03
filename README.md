@@ -15,6 +15,9 @@ pip install pytest
 # Install all below packages in same way:
 selenium, faker, fastapi, pydantic, typing, junit2html
 
+# To create test data, this will create test_data.json
+python create_policy_test_data.py
+
 # To start application run below command, keep this tab open in the terminal
 python main.py
 
