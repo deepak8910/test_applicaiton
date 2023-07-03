@@ -15,10 +15,10 @@ pip install pytest
 # Install all below packages in same way:
 selenium, faker, fastapi, pydantic, typing, junit2html
 
-# To start application run below command
+# To start application run below command, keep this tab open in the terminal
 python main.py
 
-# To run test cases 
+# To run test cases, open new terminal and run below command
 pytest test_api.py -sv --junitxml=results.xml --log-level=INFO --log-file=log_file.txt
 
 # To convert xml result to html 
