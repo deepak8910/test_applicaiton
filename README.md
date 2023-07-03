@@ -5,23 +5,23 @@ Make sure your system has python3 installed and pip installed, if it is not inst
 to download and install python:
 https://www.python.org/downloads/
 
-To install pip
+# To install pip
 https://packaging.python.org/en/latest/tutorials/installing-packages/
 
-Installation
+# Installation
 To install the required packages, use the following command example:
 pip install pytest
 
-Install all below packages in same way:
+# Install all below packages in same way:
 selenium, faker, fastapi, pydantic, typing, junit2html
 
-To start application run below command
+# To start application run below command
 python main.py
 
-To run test cases 
+# To run test cases 
 pytest test_api.py -sv --junitxml=results.xml --log-level=INFO --log-file=log_file.txt
 
-To convert xml result to html 
+# To convert xml result to html 
 junit2html results.xml testrun.html
 
 There is one more file added test_policy_app_using_selenium.py in this project to test applicaiton using selenium web driver.
