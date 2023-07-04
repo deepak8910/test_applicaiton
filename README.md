@@ -22,10 +22,10 @@ python create_policy_test_data.py
 python main.py
 
 # To run test cases, open new terminal and run below command
-pytest test_api.py -sv --junitxml=results.xml --log-level=INFO --log-file=log_file.txt
+pytest test_api.py -sv --junitxml=results.xml --log-level=INFO --log-file=log_file.txt --html=reports/reports.html
 
-# To convert xml result to html 
-junit2html results.xml testrun.html
+# to see the html report
+open reports/reports.html file in web browse to see the test report.
 
 #part 2 
 main2.py and test_api2.py files will be a short version shows if I want to send data to application via post method, how that can be done.
