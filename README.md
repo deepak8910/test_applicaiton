@@ -27,6 +27,10 @@ pytest test_api.py -sv --junitxml=results.xml --log-level=INFO --log-file=log_fi
 # To convert xml result to html 
 junit2html results.xml testrun.html
 
+#part 2 
+main2.py and test_api2.py files will be a short version shows if I want to send data to application via post method, how that can be done.
+first start application by running "python main2.py" and then start test case in new terminal by running "pytest test_api2.py"
+
 There is one more file added test_policy_app_using_selenium.py in this project to test applicaiton using selenium web driver.
 However demo application is not ready to run this file, hence for now it cannot be run now.
 
